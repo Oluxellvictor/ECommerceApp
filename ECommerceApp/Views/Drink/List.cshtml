@@ -1,0 +1,17 @@
+﻿
+
+<div>
+
+    <h2>All Drinks are shown here</h2>
+
+
+</div>
+<h1>@Model.CurrentCategory</h1>
+
+@{
+    foreach (Drink drink in Model.Drink)
+    {
+        @await Html.PartialAsync("DrinkSummary", drink)
+    }
+}
+

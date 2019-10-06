@@ -1,0 +1,16 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@await Html.PartialAsync("Carousel")
+
+<h2>App For Selling Quality Drinks Alcoholic & Non Alcoholic</h2>
+<h4>Clients Preferences - just for you!</h4>
+
+<div class="row">
+    @foreach (var drink in Model.PreferredDrinks)
+    {
+        @await Html.PartialAsync("DrinksSummary", drink)
+    }
+</div>
