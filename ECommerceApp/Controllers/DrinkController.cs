@@ -1,7 +1,6 @@
 ﻿using ECommerceApp.Data.Interfaces;
 using ECommerceApp.Data.Models;
 using ECommerceApp.ViewModels;
-es
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
